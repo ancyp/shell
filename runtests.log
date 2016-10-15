@@ -1,0 +1,755 @@
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+rm -f mysh 
+Trying to build project using make
+make
+gcc -o mysh -Wall -g mysh.c
+mysh.c: In function ‘main’:
+mysh.c:85:7: warning: unused variable ‘i’ [-Wunused-variable]
+   int i, j = 0, num_cmd_args, j_with_args, status;
+       ^
+
+
+test build PASSED
+ (build project using make)
+
+starting linttest
+
+**********************************************************************
+
+Test linttest
+Lint test for C programming style
+
+**********************************************************************
+/u/c/s/cs537-1/ta/tests/2a/../../lint/cpplint.py --extensions c,h mysh.c
+mysh.c:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:103:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:104:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:119:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+mysh.c:120:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:121:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:121:  Missing space before ( in if(  [whitespace/parens] [5]
+mysh.c:123:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:124:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:125:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:129:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:129:  Missing space before ( in if(  [whitespace/parens] [5]
+mysh.c:130:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:131:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:136:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:136:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+mysh.c:136:  Missing space before {  [whitespace/braces] [5]
+mysh.c:137:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:138:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:139:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:140:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:140:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+mysh.c:140:  Missing space before {  [whitespace/braces] [5]
+mysh.c:141:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:142:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:142:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+mysh.c:142:  Missing space before {  [whitespace/braces] [5]
+mysh.c:143:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:144:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:145:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:146:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:147:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:148:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:149:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:178:  Should have a space between // and comment  [whitespace/comments] [4]
+mysh.c:198:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+mysh.c:202:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:219:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:220:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:221:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:222:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:223:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:224:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:225:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:226:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:228:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:229:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:231:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:232:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+mysh.c:234:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:235:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:236:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:237:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:238:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:239:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:240:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:241:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:242:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:243:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:244:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:245:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:246:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:248:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:249:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:250:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:252:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:253:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:254:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:255:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:256:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:257:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:258:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:259:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:260:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:261:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:262:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:264:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:265:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:266:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:267:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:268:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:269:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:270:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:271:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:272:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:273:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:274:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:275:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:276:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:277:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:278:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:279:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:280:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:281:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:282:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:283:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:285:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+mysh.c:304:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:306:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+mysh.c:334:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+mysh.c:336:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:337:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:338:  Tab found; better to use spaces  [whitespace/tab] [1]
+mysh.c:341:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+Done processing mysh.c
+Total errors found: 104
+Failure: /u/c/s/cs537-1/ta/tests/2a/../../lint/cpplint.py returned incorrect status code. Expected 0 got 1
+
+
+test linttest FAILED (0 of 5)
+ (Lint test for C programming style)
+ /u/c/s/cs537-1/ta/tests/2a/../../lint/cpplint.py returned incorrect status code. Expected 0 got 1
+
+starting valgrindtest
+
+**********************************************************************
+
+Test valgrindtest
+Valgrind test for memory management
+
+**********************************************************************
+Running valgrind
+/usr/bin/valgrind --show-reachable=yes --xml=yes --child-silent-after-fork=yes --undef-value-errors=no --xml-file=/tmp/tmpuzDJvF/p/vg_summary.xml ./mysh /u/c/s/cs537-1/ta/tests/2a/valgrind/in
+ls
+CPPLINT.cfg
+makefile
+makefile~
+mysh
+mysh.c
+mysh.c~
+runtests.log
+vg_summary.xml
+echo 5
+5
+sleep 3&
+j
+myw 3
+Waitpid error: No child processes
+Valgrind completed in 3.39539289474 seconds
+
+
+test valgrindtest FAILED (0 of 10)
+ (Valgrind test for memory management)
+ Valgrind error, check error section of summary: vg_summary.xml
+
+
+starting args
+
+**********************************************************************
+
+Test args
+too many arguments to mysh
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/args/in /bogus
+
+
+test args PASSED (2 of 2)
+ (too many arguments to mysh)
+
+starting args2
+
+**********************************************************************
+
+Test args2
+invalid batch file path
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /bogus
+
+
+test args2 PASSED (2 of 2)
+ (invalid batch file path)
+
+starting interactive
+
+**********************************************************************
+
+Test interactive
+simple command in interactive mode
+
+**********************************************************************
+Running mysh with 1 command: see /u/c/s/cs537-1/ta/tests/2a/interactive/in
+
+/tmp/tmpuzDJvF/p/./mysh
+
+
+test interactive PASSED (2 of 2)
+ (simple command in interactive mode)
+
+starting interactive2
+
+**********************************************************************
+
+Test interactive2
+multiple commands in interactive mode
+
+**********************************************************************
+Running mysh with multiple commands: see /u/c/s/cs537-1/ta/tests/2a/interactive2/in
+
+/tmp/tmpuzDJvF/p/./mysh
+
+
+test interactive2 PASSED (3 of 3)
+ (multiple commands in interactive mode)
+
+starting blank
+
+**********************************************************************
+
+Test blank
+an empty batch file
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/blank/in
+
+
+test blank PASSED (2 of 2)
+ (an empty batch file)
+
+starting basic
+
+**********************************************************************
+
+Test basic
+run a single command with no arguments
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/basic/in
+
+
+test basic PASSED (2 of 2)
+ (run a single command with no arguments)
+
+starting parseargs
+
+**********************************************************************
+
+Test parseargs
+a command with an argument
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs/in
+
+
+test parseargs PASSED (2 of 2)
+ (a command with an argument)
+
+starting parseargs2
+
+**********************************************************************
+
+Test parseargs2
+a commands with many arguments
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs2/in
+
+
+test parseargs2 PASSED (2 of 2)
+ (a commands with many arguments)
+
+starting parseargs3
+
+**********************************************************************
+
+Test parseargs3
+A command with illegal arguments
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs3/in
+
+
+test parseargs3 PASSED (2 of 2)
+ (A command with illegal arguments)
+
+starting parseargs4
+
+**********************************************************************
+
+Test parseargs4
+An invalid command
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/parseargs4/in
+
+
+test parseargs4 PASSED (4 of 4)
+ (An invalid command)
+
+starting exit
+
+**********************************************************************
+
+Test exit
+The builtin exit command
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/exit/in
+
+
+test exit PASSED (2 of 2)
+ (The builtin exit command)
+
+starting illegal
+
+**********************************************************************
+
+Test illegal
+Builtin command with illegal arguments
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/illegal/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "\nuname\nLinux\nexit 5&5\nuname\nLinux\n"
+Got:      "\nuname\nLinux\nexit 5&5\n"
+
+
+test illegal FAILED (0 of 2)
+ (Builtin command with illegal arguments)
+ ./mysh gave incorrect standard output.
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+Builtin command with extra whitespace
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/whitespace/in
+Failure: ./mysh gave incorrect standard error.
+Expected: ""
+Got:      "\tj: Command not found\n"
+
+
+test whitespace FAILED (0 of 2)
+ (Builtin command with extra whitespace)
+ ./mysh gave incorrect standard error.
+
+starting whitespace2
+
+**********************************************************************
+
+Test whitespace2
+Several commands with extra whitespace
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/whitespace2/in
+
+
+test whitespace2 PASSED (3 of 3)
+ (Several commands with extra whitespace)
+
+starting whitespace3
+
+**********************************************************************
+
+Test whitespace3
+Several commands with &
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/whitespace3/in
+Failure: ./mysh returned incorrect status code. Expected 0 got -11
+
+
+test whitespace3 FAILED (0 of 3)
+ (Several commands with &)
+ ./mysh returned incorrect status code. Expected 0 got -11
+
+starting job
+
+**********************************************************************
+
+Test job
+Simple j command with one background process
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/job/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "sleep 2 &\nj\n1 : sleep 2\n"
+Got:      "sleep 2 &\nj\n"
+
+
+test job FAILED (0 of 3)
+ (Simple j command with one background process)
+ ./mysh gave incorrect standard output.
+
+starting job2
+
+**********************************************************************
+
+Test job2
+Simple j command with extra whitespace and &
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/job2/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "sleep 2 &\n\t j&    \n1 : sleep 2\n"
+Got:      "sleep 2 &\n\t j&    \n"
+
+
+test job2 FAILED (0 of 4)
+ (Simple j command with extra whitespace and &)
+ ./mysh gave incorrect standard output.
+
+starting job3
+
+**********************************************************************
+
+Test job3
+j command with multiple background process and empty lines
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/job3/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "\nsleep 3&\necho jid: 2\njid: 2\n\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 2 jid:3&&\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 jid:3&\nj\n1 : sleep 3\n3 : /u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 2 jid:3&\n4 : /u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 jid:3\nsleep 3\njid:3\njid:3&\n"
+Got:      "\nsleep 3&\necho jid: 2\njid: 2\n\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 2 jid:3&&\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 jid:3&\nj\nsleep 3\n"
+
+
+test job3 FAILED (0 of 5)
+ (j command with multiple background process and empty lines)
+ ./mysh gave incorrect standard output.
+
+starting job4
+
+**********************************************************************
+
+Test job4
+Call j commands multiple times
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/job4/in
+
+
+test job4 FAILED (0 of 4)
+ (Call j commands multiple times)
+ Timelimit (10.0s) exceeded
+
+starting job5
+
+**********************************************************************
+
+Test job5
+j command with commands with extra whitespace
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/job5/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "\t\tsleep 2 \t& \n\nsleep    2&\t\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 \t&&&&& \nj\n1 : sleep 2\n2 : sleep 2\n3 : /u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 &&&&\nsleep 2\n&&&&\n"
+Got:      "\t\tsleep 2 \t& \n\nsleep    2&\t\n/u/c/s/cs537-1/ta/tests/2a/sh/sleep.sh 1 \t&&&&& \nj\nsleep 2\n"
+
+
+test job5 FAILED (0 of 4)
+ (j command with commands with extra whitespace)
+ ./mysh gave incorrect standard output.
+
+starting longline
+
+**********************************************************************
+
+Test longline
+maximum length line
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/longline/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "echo 000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000512\n000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000512\nuname\nLinux\n"
+Got:      "echo 0000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000005100001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888999999999900000000001111111111222222222233333333334444444444555555555566666666667777777777888888888899999999990000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999000000000051\n2\nuname\nLinux\n"
+
+
+test longline FAILED (0 of 3)
+ (maximum length line)
+ ./mysh gave incorrect standard output.
+
+starting toolong
+
+**********************************************************************
+
+Test toolong
+a line that is too long
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/toolong/in
+Failure: toolong gave incorrect output
+
+
+test toolong FAILED (0 of 3)
+ (a line that is too long)
+ toolong gave incorrect output
+
+starting myw
+
+**********************************************************************
+
+Test myw
+myw with illegal argument
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/myw/in
+Failure: ./mysh gave incorrect standard error.
+Expected: "myw: Command not found\n"
+Got:      "Waitpid error: No child processes\n"
+
+
+test myw FAILED (0 of 3)
+ (myw with illegal argument)
+ ./mysh gave incorrect standard error.
+
+starting myw1
+
+**********************************************************************
+
+Test myw1
+myw with illegal argument
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/myw1/in
+
+
+test myw1 PASSED (3 of 3)
+ (myw with illegal argument)
+
+starting myw2
+
+**********************************************************************
+
+Test myw2
+Single myw
+
+**********************************************************************
+Running mysh with simple myw
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/myw2/in
+Failure: myw2 gave incorrect output
+
+
+test myw2 FAILED (0 of 3)
+ (Single myw)
+ myw2 gave incorrect output
+
+starting myw3
+
+**********************************************************************
+
+Test myw3
+Multiple myw
+
+**********************************************************************
+Running mysh with multiple myw
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/myw3/in
+Failure: myw3 gave incorrect output
+
+
+test myw3 FAILED (0 of 5)
+ (Multiple myw)
+ myw3 gave incorrect output
+
+starting myw4
+
+**********************************************************************
+
+Test myw4
+myw for already complete process
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/myw4/in
+Failure: ./mysh gave incorrect standard output.
+Expected: "\nsleep 1&\nsleep 2\nmyw 1\n0 : Job 1 terminated\nexit\n"
+Got:      "\nsleep 1&\nsleep 2\nmyw 1\nexit\n"
+
+
+test myw4 FAILED (0 of 3)
+ (myw for already complete process)
+ ./mysh gave incorrect standard output.
+
+starting background
+
+**********************************************************************
+
+Test background
+32 concurrently running background jobs and over 100 background jobs in total
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/background/in
+
+
+test background FAILED (0 of 5)
+ (32 concurrently running background jobs and over 100 background jobs in total)
+ Timelimit (20.0s) exceeded
+
+starting end
+
+**********************************************************************
+
+Test end
+Batch file without exit
+
+**********************************************************************
+/tmp/tmpuzDJvF/p/./mysh /u/c/s/cs537-1/ta/tests/2a/end/in
+
+
+test end PASSED (2 of 2)
+ (Batch file without exit)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test linttest FAILED (0 of 5)
+ (Lint test for C programming style)
+ /u/c/s/cs537-1/ta/tests/2a/../../lint/cpplint.py returned incorrect status code. Expected 0 got 1
+
+test valgrindtest FAILED (0 of 10)
+ (Valgrind test for memory management)
+ Valgrind error, check error section of summary: vg_summary.xml
+
+
+test args PASSED (2 of 2)
+ (too many arguments to mysh)
+
+test args2 PASSED (2 of 2)
+ (invalid batch file path)
+
+test interactive PASSED (2 of 2)
+ (simple command in interactive mode)
+
+test interactive2 PASSED (3 of 3)
+ (multiple commands in interactive mode)
+
+test blank PASSED (2 of 2)
+ (an empty batch file)
+
+test basic PASSED (2 of 2)
+ (run a single command with no arguments)
+
+test parseargs PASSED (2 of 2)
+ (a command with an argument)
+
+test parseargs2 PASSED (2 of 2)
+ (a commands with many arguments)
+
+test parseargs3 PASSED (2 of 2)
+ (A command with illegal arguments)
+
+test parseargs4 PASSED (4 of 4)
+ (An invalid command)
+
+test exit PASSED (2 of 2)
+ (The builtin exit command)
+
+test illegal FAILED (0 of 2)
+ (Builtin command with illegal arguments)
+ ./mysh gave incorrect standard output.
+
+test whitespace FAILED (0 of 2)
+ (Builtin command with extra whitespace)
+ ./mysh gave incorrect standard error.
+
+test whitespace2 PASSED (3 of 3)
+ (Several commands with extra whitespace)
+
+test whitespace3 FAILED (0 of 3)
+ (Several commands with &)
+ ./mysh returned incorrect status code. Expected 0 got -11
+
+test job FAILED (0 of 3)
+ (Simple j command with one background process)
+ ./mysh gave incorrect standard output.
+
+test job2 FAILED (0 of 4)
+ (Simple j command with extra whitespace and &)
+ ./mysh gave incorrect standard output.
+
+test job3 FAILED (0 of 5)
+ (j command with multiple background process and empty lines)
+ ./mysh gave incorrect standard output.
+
+test job4 FAILED (0 of 4)
+ (Call j commands multiple times)
+ Timelimit (10.0s) exceeded
+
+test job5 FAILED (0 of 4)
+ (j command with commands with extra whitespace)
+ ./mysh gave incorrect standard output.
+
+test longline FAILED (0 of 3)
+ (maximum length line)
+ ./mysh gave incorrect standard output.
+
+test toolong FAILED (0 of 3)
+ (a line that is too long)
+ toolong gave incorrect output
+
+test myw FAILED (0 of 3)
+ (myw with illegal argument)
+ ./mysh gave incorrect standard error.
+
+test myw1 PASSED (3 of 3)
+ (myw with illegal argument)
+
+test myw2 FAILED (0 of 3)
+ (Single myw)
+ myw2 gave incorrect output
+
+test myw3 FAILED (0 of 5)
+ (Multiple myw)
+ myw3 gave incorrect output
+
+test myw4 FAILED (0 of 3)
+ (myw for already complete process)
+ ./mysh gave incorrect standard output.
+
+test background FAILED (0 of 5)
+ (32 concurrently running background jobs and over 100 background jobs in total)
+ Timelimit (20.0s) exceeded
+
+test end PASSED (2 of 2)
+ (Batch file without exit)
+
+Passed 15 of 32 tests.
+Overall 15 of 32
+Points 33 of 100
